@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
                     Toast.makeText(baseContext,"Fetched ${posts!!.size} posts", Toast.LENGTH_LONG)
                         .show()
 
-                    var displayPostsRvAdapter=displayPostsRvAdapter(baseContext,posts)
+                    var displayPostsRvAdapter=displayPostsRvAdapter(posts)
                     binding.rvDisplay.layoutManager=LinearLayoutManager(baseContext)
                     binding.rvDisplay.adapter = displayPostsRvAdapter
 
@@ -45,6 +45,7 @@ class MainActivity : AppCompatActivity() {
             }
 
         })
+//        fun displayposts(postsList: List)
 
 
 }}
